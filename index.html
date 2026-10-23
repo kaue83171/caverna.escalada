@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Caverna Ginásio de Escalada - Escalada para todos. Boulder indoor no centro de Curitiba. Comunidade, eventos e muito mais.">
+    <meta name="theme-color" content="#6B2D9E">
+    <title>Caverna Ginásio de Escalada | Escalada para Todos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav__container">
+            <a href="#inicio" class="nav__logo" aria-label="Caverna Ginásio de Escalada - Início">
+                <img src="img/logo_caverna.jpg" alt="" class="nav__logo-img" width="44" height="44">
+                <span class="nav__logo-text">CAVERNA</span>
+            </a>
+            <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+                <span class="nav__hamburger"></span>
+            </button>
+            <ul class="nav__menu" id="navMenu" role="list">
+                <li><a href="#inicio" class="nav__link">Início</a></li>
+                <li><a href="#sobre" class="nav__link">Sobre</a></li>
+                <li><a href="#eventos" class="nav__link">Eventos</a></li>
+                <li><a href="#horarios" class="nav__link">Horários</a></li>
+                <li><a href="#contato" class="nav__link nav__link--cta">Fale Conosco</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="inicio" role="banner">
+        <div class="hero__background" aria-hidden="true">
+            <div class="hero__gradient"></div>
+            <div class="hero__particles" id="heroParticles"></div>
+        </div>
+        <div class="hero__container">
+            <div class="hero__content">
+                <span class="hero__badge">Bem-vindo à Caverna</span>
+                <h1 class="hero__title">
+                    Escalada
+                    <span class="hero__title--accent">para Todos</span>
+                </h1>
+                <p class="hero__subtitle">Mais que um ginásio de escalada, uma família da escalada. Boulder indoor no coração de Curitiba.</p>
+                <div class="hero__actions">
+                    <a href="#contato" class="btn btn--primary">Comece Agora</a>
+                    <a href="#eventos" class="btn btn--secondary">Ver Eventos</a>
+                </div>
+                <div class="hero__stats" role="list" aria-label="Estatísticas da Caverna">
+                    <div class="hero__stat" role="listitem">
+                        <span class="hero__stat-number" data-count="6544">0</span>
+                        <span class="hero__stat-label">Seguidores</span>
+                    </div>
+                    <div class="hero__stat" role="listitem">
+                        <span class="hero__stat-number" data-count="423">0</span>
+                        <span class="hero__stat-label">Publicações</span>
+                    </div>
+                    <div class="hero__stat" role="listitem">
+                        <span class="hero__stat-number" data-count="8">0</span>
+                        <span class="hero__stat-label">Anos de Caverna</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__visual" aria-hidden="true">
+                <div class="hero__logo-large">
+                    <div class="hero__logo-glow" aria-hidden="true"></div>
+                    <img src="img/logo_caverna.jpg" alt="Logo da Caverna Ginásio de Escalada" class="hero__logo-img" width="440" height="440">
+                </div>
+            </div>
+        </div>
+        <a href="#sobre" class="hero__scroll" aria-label="Rolar para saber mais">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+        </a>
+    </header>
+
+    <!-- About Section -->
+    <section class="section about" id="sobre" aria-labelledby="sobreTitle">
+        <div class="section__container">
+            <header class="section__header">
+                <span class="section__tag">Conheça a Caverna</span>
+                <h2 id="sobreTitle" class="section__title">Mais que um ginásio, <span class="text-accent">uma família</span></h2>
+            </header>
+            <div class="about__grid">
+                <div class="about__content">
+                    <p class="about__text">Fundada em 2018, a Caverna nasceu da paixão pela escalada e da vontade de criar um espaço onde todos — do iniciante ao atleta — se sintam em casa. Aqui, a parede é só o começo.</p>
+                    <p class="about__text">Nosso foco é o boulder indoor: escalada de baixa altura, sem cordas, com colchões de proteção. É pura técnica, força e resolução de problemas — acessível para qualquer idade e condicionamento.</p>
+                    <div class="about__features" role="list">
+                        <div class="about__feature" role="listitem">
+                            <div class="about__feature-icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="about__feature-title">Comunidade Acolhedora</h3>
+                                <p class="about__feature-desc">\"Escalada para todos\" não é slogan — é prática. Recebemos iniciantes, crianças, atletas e famílias.</p>
+                            </div>
+                        </div>
+                        <div class="about__feature" role="listitem">
+                            <div class="about__feature-icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="about__feature-title">Eventos Exclusivos</h3>
+                                <p class="about__feature-desc">Cave Fest, Sexta das Gurias, Halloween, Night Climb, Workshops técnicos e muito mais.</p>
+                            </div>
+                        </div>
+                        <div class="about__feature" role="listitem">
+                            <div class="about__feature-icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="about__feature-title">Segurança em Primeiro Lugar</h3>
+                                <p class="about__feature-desc">Colchões certificados, equipe treinada, instrução obrigatória para iniciantes e manutenção constante das vias.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__visual">
+                    <div class="about__image-wrapper">
+                        <div class="about__image-placeholder" aria-hidden="true">
+                            <svg class="about__illustration" viewBox="0 0 400 500" fill="none" aria-hidden="true">
+                                <rect x="20" y="20" width="360" height="460" rx="20" stroke="var(--color-primary)" stroke-width="2" fill="var(--color-surface)"/>
+                                <path d="M50 450 L80 100 Q120 50 200 60 Q280 70 320 120 L350 450" stroke="var(--color-primary)" stroke-width="3" fill="none" opacity="0.3"/>
+                                <circle cx="100" cy="180" r="15" fill="var(--color-accent)" opacity="0.8"/>
+                                <circle cx="180" cy="220" r="12" fill="var(--color-secondary)" opacity="0.8"/>
+                                <circle cx="260" cy="160" r="18" fill="var(--color-primary)" opacity="0.8"/>
+                                <circle cx="140" cy="320" r="10" fill="var(--color-accent)" opacity="0.8"/>
+                                <circle cx="240" cy="350" r="14" fill="var(--color-secondary)" opacity="0.8"/>
+                                <ellipse cx="200" cy="480" rx="80" ry="15" fill="var(--color-surface-elevated)" opacity="0.5"/>
+                                <g class="climber-silhouette">
+                                    <circle cx="180" cy="200" r="12" fill="var(--color-text)" opacity="0.6"/>
+                                    <path d="M180 212 L160 260 M180 212 L200 260 M180 230 L150 250 M180 230 L210 250" stroke="var(--color-text)" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="about__badge-float" aria-hidden="true">
+                            <span>🧗 Boulder Indoor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="section events" id="eventos" aria-labelledby="eventosTitle">
+        <div class="section__container">
+            <header class="section__header">
+                <span class="section__tag">Próximos Eventos</span>
+                <h2 id="eventosTitle" class="section__title">O que rola na <span class="text-accent">Caverna</span></h2>
+            </header>
+            <div class="events__grid" role="list">
+                <article class="event-card" role="listitem">
+                    <div class="event-card__date">
+                        <span class="event-card__day">15</span>
+                        <span class="event-card__month">NOV</span>
+                    </div>
+                    <div class="event-card__content">
+                        <span class="event-card__type">Festival</span>
+                        <h3 class="event-card__title">Cave Fest 2024</h3>
+                        <p class="event-card__desc">Nosso maior evento do ano! Competições amadoras, clínicas com atletas, música, food trucks e festa de encerramento.</p>
+                        <div class="event-card__meta">
+                            <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 09:00 - 22:00</span>
+                            <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Caverna Ginásio</span>
+                        </div>
+                        <a href="#contato" class="event-card__link">Inscreva-se <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </article>
+                <article class="event-card" role="listitem">
+                    <div class="event-card__date event-card__date--orange">
+                        <span class="event-card__day">TODA</span>
+                        <span class="event-card__month">SEXTA</span>
+                    </div>
+                    <div class="event-card__content">
+                        <span class="event-card__type event-card__type--recurring">Recorrente</span>
+                        <h3 class="event-card__title">Sexta das Gurias</h3>
+                        <p class="event-card__desc">Noite exclusiva para mulheres escalarem juntas. Ambiente acolhedor, dicas técnicas e muita troca. Todos os níveis bem-vindos!</p>
+                        <div class="event-card__meta">
+                            <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 19:00 - 23:00</span>
+                            <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Entrada livre p/ mulheres</span>
+                        </div>
+                        <a href="#contato" class="event-card__link">Saiba mais <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </article>
+                <article class="event-card" role="listitem">
+                    <div class="event-card__date event-card__date--green">
+                        <span class="event-card__day">28</span>
+                        <span class="event-card__month">OUT</span>
+                    </div>
+                    <div class="event-card__content">
+                        <span class="event-card__type">Especial</span>
+                        <h3 class="event-card__title">Cave Halloween 🎃</h3>
+                        <p class="event-card__desc">Escalada noturna temática com fantasias, vias especiais no escuro, doces ou travessuras e prêmio para melhor fantasia!</p>
+                        <div class="event-card__meta">
+                            <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 20:00 - 00:00</span>
+                            <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Vagas limitadas</span>
+                        </div>
+                        <a href="#contato" class="event-card__link">Reservar lugar <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </article>
+                <article class="event-card" role="listitem">
+                    <div class="event-card__date">
+                        <span class="event-card__day">SEM</span>
+                        <span class="event-card__month">ANAL</span>
+                    </div>
+                    <div class="event-card__content">
+                        <span class="event-card__type">Recorrente</span>
+                        <h3 class="event-card__title">Night Climb</h3>
+                        <p class="event-card__desc">Escalada noturna com luz ambiente, música e clima descontraído. Perfeito para quem trabalha até tarde.</p>
+                        <div class="event-card__meta">
+                            <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Ter & Qui 20h-23h</span>
+                            <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Incluso no day pass</span>
+                        </div>
+                        <a href="#horarios" class="event-card__link">Ver horários <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="section schedule" id="horarios" aria-labelledby="horariosTitle">
+        <div class="section__container">
+            <header class="section__header">
+                <span class="section__tag">Funcionamento</span>
+                <h2 id="horariosTitle" class="section__title">Horários de <span class="text-accent">funcionamento</span></h2>
+            </header>
+            <div class="schedule__grid">
+                <div class="schedule__week">
+                    <h3 class="schedule__week-title">Segunda a Sexta</h3>
+                    <ul class="schedule__list" role="list">
+                        <li class="schedule__item"><span class="schedule__day">Segunda à Sexta</span><span class="schedule__time">09:30 – 21:30</span></li>
+                    </ul>
+                </div>
+                <div class="schedule__weekend">
+                    <h3 class="schedule__week-title">Fim de Semana</h3>
+                    <ul class="schedule__list" role="list">
+                        <li class="schedule__item"><span class="schedule__day">Sábados</span><span class="schedule__time">10:00 – 18:00</span></li>
+                        <li class="schedule__item"><span class="schedule__day">Domingos</span><span class="schedule__time">13:00 – 18:00</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="schedule__prices">
+                <a href="https://wa.me/5541992017347" target="_blank" rel="noopener" class="btn btn--primary">Falar no WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta" aria-labelledby="ctaTitle">
+        <div class="section__container">
+            <div class="cta__card">
+                <h2 id="ctaTitle" class="cta__title">Pronto para <span class="text-accent">escalar</span>?</h2>
+                <p class="cta__text">Vem conhecer a família Caverna!</p>
+                <div class="cta__actions">
+                    <a href="https://wa.me/5541992017347" target="_blank" rel="noopener" class="btn btn--primary btn--large">Chamar no WhatsApp</a>
+                    <a href="https://instagram.com/caverna.escalada" target="_blank" rel="noopener" class="btn btn--outline btn--large">@caverna.escalada</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contato" aria-labelledby="contatoTitle">
+        <div class="section__container">
+            <header class="section__header">
+                <span class="section__tag">Venha nos visitar</span>
+                <h2 id="contatoTitle" class="section__title">Fale com a <span class="text-accent">Caverna</span></h2>
+            </header>
+            <div class="contact__grid">
+                <div class="contact__info">
+                    <div class="contact__card">
+                        <div class="contact__card-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <h3 class="contact__card-title">Endereço</h3>
+                        <address class="contact__card-text">R. Tibagi, 674 - Centro<br>Curitiba - PR, 80060-280</address>
+                        <a href="https://maps.google.com/maps/place//data=!4m2!3m1!1s0x94dce414ef7c9891:0x33feae96baf4134b" target="_blank" rel="noopener" class="contact__card-link">Abrir no Google Maps <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+                    </div>
+                    <div class="contact__card">
+                        <div class="contact__card-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <h3 class="contact__card-title">WhatsApp</h3>
+                        <a href="https://wa.me/5541992017347" class="contact__card-text">(41) 99201-7347</a>
+                        <span class="contact__card-link">Atendimento: Ter-Sex 14h-22h</span>
+                    </div>
+                    <div class="contact__card">
+                        <div class="contact__card-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </div>
+                        <h3 class="contact__card-title">Instagram</h3>
+                        <a href="https://instagram.com/caverna.escalada" target="_blank" rel="noopener" class="contact__card-text">@caverna.escalada</a>
+                        <span class="contact__card-link">6.544 seguidores • 423 posts</span>
+                    </div>
+                </div>
+                <form class="contact__form" id="contactForm" novalidate>
+                    <div class="form__group">
+                        <label for="nome" class="form__label">Nome completo</label>
+                        <input type="text" id="nome" name="nome" class="form__input" placeholder="Seu nome" required autocomplete="name">
+                    </div>
+                    <div class="form__group">
+                        <label for="email" class="form__label">E-mail</label>
+                        <input type="email" id="email" name="email" class="form__input" placeholder="seu@email.com" required autocomplete="email">
+                    </div>
+                    <div class="form__group">
+                        <label for="telefone" class="form__label">WhatsApp (opcional)</label>
+                        <input type="tel" id="telefone" name="telefone" class="form__input" placeholder="(41) 9xxxx-xxxx" autocomplete="tel">
+                    </div>
+                    <div class="form__group">
+                        <label for="assunto" class="form__label">Assunto</label>
+                        <select id="assunto" name="assunto" class="form__select" required>
+                            <option value="">Selecione...</option>
+                            <option value="daypass">Day Pass / Primeira visita</option>
+                            <option value="mensalidade">Mensalidade / Planos</option>
+                            <option value="eventos">Eventos / Cave Fest</option>
+                            <option value="festas">Festas / Eventos privados</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <label for="mensagem" class="form__label">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" class="form__textarea" rows="4" placeholder="Conte o que você procura..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">Enviar mensagem</button>
+                    <p class="form__note">Respondemos em até 24h pelo WhatsApp ou e-mail.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="section__container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="#inicio" class="footer__logo" aria-label="Caverna Ginásio de Escalada - Início">
+                        <svg class="footer__logo-icon" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+                            <circle cx="40" cy="40" r="38" stroke="currentColor" stroke-width="2"/>
+                            <path d="M20 55 Q30 35 40 25 Q50 35 60 55" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none"/>
+                            <circle cx="32" cy="32" r="3" fill="currentColor"/>
+                            <circle cx="48" cy="32" r="3" fill="currentColor"/>
+                            <path d="M28 48 Q40 52 52 48" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+                        </svg>
+                        <span>CAVERNA</span>
+                    </a>
+                    <p class="footer__tagline">Ginásio de Escalada em Boulder<br>Curitiba - PR</p>
+                    <div class="footer__social" role="list" aria-label="Redes sociais">
+                        <a href="https://instagram.com/caverna.escalada" target="_blank" rel="noopener" class="footer__social-link" aria-label="Instagram da Caverna">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="https://wa.me/5541992017347" target="_blank" rel="noopener" class="footer__social-link" aria-label="WhatsApp da Caverna">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </a>
+                        <a href="https://maps.google.com/maps/place//data=!4m2!3m1!1s0x94dce414ef7c9891:0x33feae96baf4134b" target="_blank" rel="noopener" class="footer__social-link" aria-label="Localização no Google Maps">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <nav class="footer__nav" aria-label="Navegação do rodapé">
+                    <div class="footer__nav-col">
+                        <h4 class="footer__nav-title">Ginásio</h4>
+                        <ul role="list">
+                            <li><a href="#sobre">Sobre nós</a></li>
+                            <li><a href="#horarios">Horários</a></li>
+                            <li><a href="#eventos">Eventos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-col">
+                        <h4 class="footer__nav-title">Comunidade</h4>
+                        <ul role="list">
+                            <li><a href="#eventos">Cave Fest</a></li>
+                            <li><a href="#eventos">Sexta das Gurias</a></li>
+                            <li><a href="#contato">Fale conosco</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-col">
+                        <h4 class="footer__nav-title">Info Útil</h4>
+                        <ul role="list">
+                            <li><a href="#contato">Como chegar</a></li>
+                            <li><a href="https://wa.me/5541992017347" target="_blank" rel="noopener">WhatsApp</a></li>
+                            <li><a href="https://instagram.com/caverna.escalada" target="_blank" rel="noopener">Instagram</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2024 Caverna Ginásio de Escalada. Todos os direitos reservados.</p>
+                <p class="footer__made">Feito com 💜 para a comunidade da escalada</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast" role="alert" aria-live="polite" hidden>
+        <div class="toast__content">
+            <svg class="toast__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span class="toast__message"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
